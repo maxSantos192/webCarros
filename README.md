@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+![Logo WebCarros](https://raw.githubusercontent.com/maxSantos192/webCarros/d6b5ff786ee261156bc2e36e9ccddd5b23515ed6/public/favicon.svg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# WebCarros - Carros novos e usados em todo o Brasil
 
-Currently, two official plugins are available:
+## Visão geral
+O WebCarros é um sistema web para ligar compradores e vendedores de carros, com uma interface simples e recursos robustos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias usadas
+- **Fronted:** vite, react-hot-toast, swiper, tailwindcss.
+- **Backend:** firebase, react-hook-form, zod, react-router-dom, typescript.
+- **Autenticação:** google firebase authentication.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Instalação
+1. Clone o repositório para sua máquina local.
+2. Acesse a pasta do projeto e instale as dependêcias.
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+cd webCarros
+npm install
+```
+3. Configure as variáveis de ambiente.
+4. Inicie o servidor local da aplicação.
+```
+npm run dev
+```
+Acesse http://localhost:5173 para visualizar a aplicação.
